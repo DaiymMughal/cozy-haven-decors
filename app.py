@@ -75,63 +75,55 @@ BLOG_POSTS = [
     }
 ]
 
-# Featured affiliate products from Amazon
+# ============================================
+# YOUR FEATURED AMAZON PRODUCTS
+# ============================================
+# To add more products, copy the template at the bottom and fill in details
+# Make sure each product link includes your tracking ID: cozyhaven20-20
+# ============================================
+
 FEATURED_PRODUCTS = [
     {
-        'title': 'Modern Throw Pillow Set',
-        'description': 'Set of 4 velvet throw pillows with inserts. Perfect for sofas and beds.',
-        'price': '$29.99',
-        'rating': 4.7,
-        'image': 'https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?w=400',
-        'link': 'https://www.amazon.com/s?k=throw+pillows',
-        'reviews': '12,458'
-    },
-    {
-        'title': 'Boho Macrame Wall Hanging',
-        'description': 'Handwoven macrame wall decor. Adds texture and warmth to any room.',
-        'price': '$24.99',
-        'rating': 4.8,
-        'image': 'https://images.unsplash.com/photo-1615876063272-e3c08fe576a8?w=400',
-        'link': 'https://www.amazon.com/s?k=macrame+wall+hanging',
-        'reviews': '8,932'
-    },
-    {
-        'title': 'Smart LED Strip Lights',
-        'description': 'WiFi-enabled color-changing LED strips. App and voice control compatible.',
-        'price': '$19.99',
-        'rating': 4.6,
-        'image': 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400',
-        'link': 'https://www.amazon.com/s?k=led+strip+lights',
-        'reviews': '45,231'
-    },
-    {
-        'title': 'Ceramic Vase Set',
-        'description': 'Set of 3 modern white ceramic vases. Perfect for flowers or standalone decor.',
-        'price': '$34.99',
-        'rating': 4.9,
-        'image': 'https://images.unsplash.com/photo-1578500494198-246f612d3b3d?w=400',
-        'link': 'https://www.amazon.com/s?k=ceramic+vase',
-        'reviews': '3,421'
-    },
-    {
-        'title': 'Faux Eucalyptus Plant',
-        'description': 'Lifelike artificial eucalyptus in decorative pot. No maintenance required!',
-        'price': '$22.99',
-        'rating': 4.7,
-        'image': 'https://images.unsplash.com/photo-1585567370656-2ebcf8f4e498?w=400',
-        'link': 'https://www.amazon.com/s?k=faux+plants',
-        'reviews': '7,654'
-    },
-    {
-        'title': 'Gold Storage Baskets',
-        'description': 'Set of 3 woven storage baskets with handles. Stylish and functional.',
+        'title': '2x6 Hallway Washable Runner Rug',
+        'description': 'Non-slip washable runner rug perfect for hallways, kitchen, or entryway. Easy to clean and durable.',
         'price': '$39.99',
-        'rating': 4.8,
-        'image': 'https://images.unsplash.com/photo-1585562835530-d4b8fe022e9d?w=400',
-        'link': 'https://www.amazon.com/s?k=decorative+baskets',
-        'reviews': '9,123'
-    }
+        'rating': 4.6,
+        'image': 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=400',
+        'link': 'https://www.amazon.com/dp/B0D89V1RX1?tag=cozyhaven20-20',
+        'reviews': '2,847'
+    },
+    {
+        'title': 'Adhesive Towel Holder Organizer',
+        'description': 'Rustproof stainless steel adhesive organizer. No drilling required - perfect for bathroom or kitchen.',
+        'price': '$16.99',
+        'rating': 4.5,
+        'image': 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400',
+        'link': 'https://www.amazon.com/dp/B0BLSCY6PR?tag=cozyhaven20-20',
+        'reviews': '5,632'
+    },
+    {
+        'title': 'Bedsure White Fleece Throw Blanket',
+        'description': 'Ultra-soft fleece blanket perfect for cozy nights. Lightweight yet warm, great for sofas and beds.',
+        'price': '$19.99',
+        'rating': 4.7,
+        'image': 'https://images.unsplash.com/photo-1631679706033-7b9be9e8c7e0?w=400',
+        'link': 'https://www.amazon.com/dp/B0BPLB81LX?tag=cozyhaven20-20',
+        'reviews': '18,456'
+    },
 ]
+
+# ============================================
+# TEMPLATE - To add more products, copy this:
+# ============================================
+# {
+#     'title': 'Product Name Here',
+#     'description': 'Short description of the product. What makes it great?',
+#     'price': '$00.00',
+#     'rating': 4.5,
+#     'image': 'PASTE_AMAZON_IMAGE_URL_HERE',
+#     'link': 'https://www.amazon.com/dp/PRODUCT_ID?tag=cozyhaven20-20',
+#     'reviews': '0,000'
+# },
 
 @app.route('/')
 def home():
