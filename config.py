@@ -27,7 +27,7 @@ YOUTUBE_URL = ""
 # Replace with your actual Amazon Associates tracking ID
 # Sign up at: https://affiliate-program.amazon.com
 # ============================================
-AMAZON_ASSOCIATES_TAG = "yourtag-20"  # IMPORTANT: Replace with your Amazon tag!
+AMAZON_ASSOCIATES_TAG = "cozyhaven20-20"  # Your Amazon Associates tracking ID
 
 # Example Amazon product categories you can promote
 AMAZON_CATEGORIES = {
