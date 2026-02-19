@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ post.excerpt }}">
+    <meta property="og:title" content="{{ post.title }}">
+    <meta property="og:description" content="{{ post.excerpt }}">
+    <meta property="og:image" content="{{ post.image }}">
+    <meta property="og:type" content="article">
+    <title>{{ post.title }} | Cozy Haven Decor</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="/" class="logo">
+                    <i class="fas fa-home"></i>
+                    <span>Cozy Haven</span>
+                </a>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/blog" class="nav-link active">Blog</a>
+                    <a href="/resources" class="nav-link">Resources</a>
+                    <a href="/start-here" class="nav-link">Start Here</a>
+                </div>
+                
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <article class="post-article">
+        <div class="container-narrow">
+            <div class="post-header">
+                <div class="post-meta-header">
+                    <span class="post-category-badge">{{ post.category }}</span>
+                    <span class="post-date"><i class="far fa-calendar"></i> {{ post.date }}</span>
+                    <span class="post-read-time"><i class="far fa-clock"></i> {{ post.read_time }}</span>
+                </div>
+                
+                <h1 class="post-main-title">{{ post.title }}</h1>
+                
+                <div class="post-featured-image">
+                    <img src="{{ post.image }}" alt="{{ post.title }}">
+                </div>
+            </div>
+
+            <!-- Article Content -->
+            <div class="post-body">
+                <!-- This is sample content - you'll replace this with real content -->
+                <div class="post-intro">
+                    <p class="lead">{{ post.excerpt }}</p>
+                </div>
+
+                <div class="affiliate-disclosure">
+                    <i class="fas fa-info-circle"></i>
+                    <strong>Amazon Affiliate Disclosure:</strong> As an Amazon Associate, we earn from qualifying purchases. Product prices and availability are accurate as of the date/time indicated and are subject to change. We only recommend products we genuinely believe will enhance your home.
+                </div>
+
+                <h2>Why We Love This</h2>
+                <p>This carefully curated selection has been chosen based on customer reviews, quality, and style. These products have helped thousands of people transform their spaces into homes they truly love.</p>
+
+                <h3>Key Features:</h3>
+                <ul>
+                    <li><strong>Top-Rated on Amazon:</strong> 4+ star ratings with hundreds of reviews</li>
+                    <li><strong>Prime Shipping Available:</strong> Fast, free delivery for Prime members</li>
+                    <li><strong>Quality Guaranteed:</strong> Amazon's customer service and return policy</li>
+                    <li><strong>Budget-Friendly:</strong> Affordable options that don't compromise on style</li>
+                </ul>
+
+                <div class="content-cta-box">
+                    <h3>🎁 Want the Complete Step-by-Step System?</h3>
+                    <p>Get instant access to our proven blueprint that shows you exactly how to implement this strategy.</p>
+                    <a href="{{ post.affiliate_link }}" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+                        Get Instant Access <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <h2>Step-by-Step Implementation Guide</h2>
+                <p>Follow these exact steps to start seeing results within your first week:</p>
+
+                <h3>Step 1: Set Up Your Foundation</h3>
+                <p>The first step is crucial. You need to establish your online presence and set up the necessary accounts. This takes about 30 minutes and costs absolutely nothing.</p>
+
+                <div class="step-box">
+                    <h4>📋 What You'll Need:</h4>
+                    <ul>
+                        <li>Email account (Gmail works great)</li>
+                        <li>30 minutes of focused time</li>
+                        <li>Internet connection</li>
+                    </ul>
+                </div>
+
+                <h3>Step 2: Choose Your Income Stream</h3>
+                <p>There are multiple ways to monetize this method. The best approach for beginners is to start with one and expand later:</p>
+
+                <ol>
+                    <li><strong>Affiliate Marketing:</strong> Promote other people's products</li>
+                    <li><strong>Digital Products:</strong> Create and sell your own resources</li>
+                    <li><strong>Ad Revenue:</strong> Get paid for traffic and views</li>
+                </ol>
+
+                <h3>Step 3: Create Your Content Strategy</h3>
+                <p>Content is king, but you don't need to be a professional writer or designer. Simple, authentic content performs best.</p>
+
+                <blockquote>
+                    "The money is in the implementation, not just the knowledge. Take action today!" - Successful Online Entrepreneur
+                </blockquote>
+
+                <h2>Common Mistakes to Avoid</h2>
+                <p>Learning from others' mistakes can save you months of trial and error. Here are the top pitfalls to watch out for:</p>
+
+                <div class="warning-box">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <strong>Warning:</strong> Don't skip the foundation steps. Many beginners rush ahead and end up confused. Follow the process systematically.
+                </div>
+
+                <h3>Mistake #1: Trying to Do Everything at Once</h3>
+                <p>Focus on mastering one income stream before diversifying. Consistency beats variety when you're starting out.</p>
+
+                <h3>Mistake #2: Giving Up Too Early</h3>
+                <p>Most people quit right before their breakthrough. Give this at least 30 days of consistent effort before evaluating results.</p>
+
+                <div class="content-cta-box success-box">
+                    <h3>✨ Ready to Get Started?</h3>
+                    <p>This comprehensive training program walks you through everything step-by-step. Perfect for beginners!</p>
+                    <a href="{{ post.affiliate_link }}" class="btn btn-success btn-lg" target="_blank" rel="noopener">
+                        Start Your Journey Now <i class="fas fa-rocket"></i>
+                    </a>
+                </div>
+
+                <h2>Real Results from Real People</h2>
+                <p>Don't just take our word for it. Here's what others are achieving with this exact method:</p>
+
+                <div class="testimonial-box">
+                    <p>"I was skeptical at first, but after following the steps for 3 weeks, I made my first $127 online! Now I'm earning $500-$800 per month consistently."</p>
+                    <div class="testimonial-author">- Sarah M., Stay-at-Home Mom</div>
+                </div>
+
+                <div class="testimonial-box">
+                    <p>"As a student in Pakistan, this has been life-changing. I'm earning more than most entry-level jobs in my city, all from my laptop."</p>
+                    <div class="testimonial-author">- Ahmed K., University Student</div>
+                </div>
+
+                <h2>Your Action Plan (Start Today)</h2>
+                <p>Here's your simple action plan to get started right now:</p>
+
+                <div class="action-checklist">
+                    <label class="checkbox-item">
+                        <input type="checkbox">
+                        <span>Read this complete guide (you're almost done!)</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox">
+                        <span>Set up your free accounts</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox">
+                        <span>Get the recommended training program</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox">
+                        <span>Implement your first income stream</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox">
+                        <span>Track your progress daily</span>
+                    </label>
+                </div>
+
+                <h2>Recommended Resources</h2>
+                <p>These are the exact tools and training programs we recommend to accelerate your success:</p>
+
+                <div class="resources-list">
+                    <div class="resource-item">
+                        <h4>🎯 Recommended Training Program</h4>
+                        <p>The most comprehensive course for beginners. Covers everything from setup to your first $10,000.</p>
+                        <a href="{{ post.affiliate_link }}" class="btn btn-primary" target="_blank" rel="noopener">
+                            Learn More <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <h2>Final Thoughts</h2>
+                <p>Making money online isn't a myth or a scam. It's a legitimate business model that millions of people use to create income. The difference between those who succeed and those who don't? <strong>Taking action and staying consistent.</strong></p>
+
+                <p>You have everything you need to start right now. The question is: will you take the first step today?</p>
+
+                <div class="post-cta-final">
+                    <h3>Start Your Online Income Journey Today 🚀</h3>
+                    <p>Get instant access to the complete system that has helped thousands earn their first dollar online.</p>
+                    <a href="{{ post.affiliate_link }}" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+                        Get Started Now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Post Footer -->
+            <div class="post-footer">
+                <div class="share-buttons">
+                    <span class="share-label">Share this guide:</span>
+                    <a href="https://pinterest.com/pin/create/button/?url={{ request.url }}&description={{ post.title }}" class="share-btn pinterest" target="_blank">
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                    <a href="https://facebook.com/sharer/sharer.php?u={{ request.url }}" class="share-btn facebook" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?url={{ request.url }}&text={{ post.title }}" class="share-btn twitter" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Email Signup Box -->
+            <div class="post-email-signup">
+                <h3>Get More Money-Making Strategies Like This</h3>
+                <p>Join 50,000+ subscribers receiving weekly guides, tips, and exclusive resources.</p>
+                <form class="inline-email-form" id="postEmailForm">
+                    <input type="email" placeholder="Enter your email..." required>
+                    <button type="submit" class="btn btn-primary">Subscribe Free</button>
+                </form>
+            </div>
+
+            <!-- Related Posts -->
+            {% if related_posts %}
+            <div class="related-posts">
+                <h3>You Might Also Like</h3>
+                <div class="related-posts-grid">
+                    {% for related in related_posts %}
+                    <article class="related-post-card">
+                        <div class="related-post-image">
+                            <img src="{{ related.image }}" alt="{{ related.title }}">
+                        </div>
+                        <div class="related-post-content">
+                            <span class="related-post-category">{{ related.category }}</span>
+                            <h4><a href="/blog/{{ related.slug }}">{{ related.title }}</a></h4>
+                        </div>
+                    </article>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Wealth Builders Hub</h4>
+                    <p>Empowering people to achieve financial freedom through online income opportunities.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/resources">Resources</a></li>
+                        <li><a href="/start-here">Start Here</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/disclaimer">Affiliate Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Wealth Builders Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
